@@ -1,68 +1,11 @@
 import React from "react";
 import { useParams, useNavigate } from "react-router-dom";
 
-const ProductDetails = () => {
+const ProductDetails = ({products}) => {
   const { productId } = useParams();
   const navigate = useNavigate();
 
-  const products = [
-    {
-      image: "/images/download.jpeg",
-      title: "Cabbage",
-      price: 400,
-      id: 1,
-      description: "Fresh green cabbage, perfect for salads and cooking.",
-    },
-    {
-      image: "/images/download (1).jpeg",
-      title: "Garlic",
-      price: 600,
-      id: 2,
-      description: "Organic garlic bulbs, rich in flavor and aroma.",
-    },
-    {
-      image: "/images/download (2).jpeg",
-      title: "Apple",
-      price: 200,
-      id: 3,
-      description: "Sweet and crispy apples, ideal for snacking or baking.",
-    },
-    {
-      image: "/images/download (3).jpeg",
-      title: "Mango",
-      price: 700,
-      id: 4,
-      description: "Juicy ripe mangoes, a tropical delight for your taste buds.",
-    },
-    {
-      image: "/images/download (4).jpeg",
-      title: "Red Rose",
-      price: 1000,
-      id: 5,
-      description: "Beautiful red roses, perfect for gifting or decoration.",
-    },
-    {
-      image: "/images/download (5).jpeg",
-      title: "Berries",
-      price: 1600,
-      id: 6,
-      description: "Fresh mixed berries, packed with antioxidants and flavor.",
-    },
-    {
-      image: "/images/download (6).jpeg",
-      title: "Avocado",
-      price: 1200,
-      id: 7,
-      description: "Creamy avocados, great for salads, toast, or guacamole.",
-    },
-    {
-      image: "/images/download (7).jpeg",
-      title: "Guava",
-      price: 2700,
-      id: 8,
-      description: "Exotic guavas, rich in nutrients and bursting with flavor.",
-    },
-  ];
+
   const product = products.find((p) => p.id === parseInt(productId));
 
 

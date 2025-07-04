@@ -12,7 +12,7 @@ function About() {
         <nav className="space-x-4 items-center text-lg">
           <a href="/" className="hover:underline">Home</a>
           <a href="/about" className="hover:underline">About</a>
-          <a href="/products" className="hover:underline">Products</a>
+          <a href="/Products" className="hover:underline">Products</a>
         </nav>
       </div>
       <div className="p-8">

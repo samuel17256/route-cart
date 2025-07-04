@@ -1,32 +1,12 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-function Home() {
+function Home({products}) {
   const navigate = useNavigate();
   const handleSeeMore = () => {
-    navigate("/products");
+    navigate("/Products");
   };
-  const products = [
-    {
-      image: "/images/download.jpeg",
-      title: "Cabbage",
-      price: 400,
-      id: 1,
-    },
-    {
-      image: "/images/download (1).jpeg",
-      title: "Garlic",
-      price: 600,
-      id: 2,
-    },
-    {
-      image: "/images/download (2).jpeg",
-      title: "Apple",
-      price: 200,
-      id: 3,
-    },
-  ];
-
+  
   return (
     <div className="bg-gray-900">
       <div className="flex items-center justify-around p-4 bg-gray-500 text-white">
@@ -40,23 +20,24 @@ function Home() {
           <a href="/about" className="hover:underline">
             About
           </a>
-          <a href="/products" className="hover:underline">
+          <a href="/Products" className="hover:underline">
             Products
           </a>
         </nav>
       </div>
-      <div className="relative h-96">
-        <img
-          src="/images/food5-scaled.jpg"
-          alt="Hero Section"
-          className="w-full h-screen object-cover"
-        />
-        <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center h-screen">
-          <h1 className="text-4xl font-bold text-white">
-            Welcome to Muplang Products
-          </h1>
-        </div>
-      </div>
+      <div className="relative h-screen">
+  <img
+    src="/images/food5-scaled.jpg"
+    alt="Hero Section"
+    className="w-full h-full object-cover"
+  />
+  <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+    <h1 className="text-4xl font-bold text-white">
+      Welcome to Muplang Products
+    </h1>
+  </div>
+</div>
+
       <div className="p-8">
         <h1 className="text-3xl font-bold mb-4 text-center text-gray-200">
           About My Products
