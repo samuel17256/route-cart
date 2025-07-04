@@ -60,7 +60,7 @@ function Product() {
     <div className="bg-gray-900 min-h-screen">
       <div className="flex items-center justify-around p-4 bg-gray-500 text-white">
         <div>
-          <h1 className="text-4xl font-bold">My Logo</h1>
+          <h1 className="text-4xl font-bold">Muplang Products</h1>
         </div>
         <nav className="space-x-4 text-lg">
           <a href="/" className="hover:underline">

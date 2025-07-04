@@ -6,7 +6,7 @@ function About() {
       <div className="flex items-center justify-around p-4 bg-gray-500 text-white">
         <div>
           <h1 className="text-4xl font-bold flex items-center">
-            <span>My Logo</span>
+            <span>Muplang Products</span>
           </h1>
         </div>
         <nav className="space-x-4 items-center text-lg">
