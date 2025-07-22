@@ -35,3 +35,4 @@ const ProductDetails = ({products}) => {
 };
 
 export default ProductDetails;
+

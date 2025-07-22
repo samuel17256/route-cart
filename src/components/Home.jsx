@@ -86,11 +86,11 @@ function Home({products}) {
           My Products
         </h1>
         <div className="flex flex-col items-center">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
             {products.map((product) => (
               <div
                 key={product.id}
-                className="border p-20 rounded-lg cursor-pointer bg-white hover:shadow-lg transition-shadow"
+                className="border  rounded-lg cursor-pointer bg-white hover:shadow-lg transition-shadow"
               >
                 <img
                   src={product.image}

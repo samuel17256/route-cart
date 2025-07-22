@@ -5,11 +5,13 @@ import Home from "./components/Home";
 import About from "./components/About";
 import ProductDetails from "./components/ProductDetails";
 import {products} from "../products";
+import CartView from "./CartView";
 
 function App() {
 
   return (
     <>
+    {/* <CartView /> */}
    <BrowserRouter>
     <Routes>
       <Route path="/" element={<Home products={products}/>} />
@@ -17,8 +19,8 @@ function App() {
       <Route path="/Products" element={<Product products={products}/>} />
       <Route path="/Products/:productId" element={<ProductDetails products={products}/>} />
     </Routes>
-   </BrowserRouter>
-    {/* <Mode /> */}
+   </BrowserRouter> 
+     {/* <Mode /> */}
     </>
   )
 }
